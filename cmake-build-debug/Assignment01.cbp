@@ -83,6 +83,12 @@
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/main.cpp">
 			<Option target="Assignment01"/>
 		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/matrix.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/matrix.hpp">
+			<Option target="Assignment01"/>
+		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
