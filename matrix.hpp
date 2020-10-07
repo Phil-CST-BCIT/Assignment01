@@ -8,6 +8,9 @@
 using namespace std;
 
 class Matrix{
+
+    friend ostream& operator<<(ostream& out, const Matrix&);
+
 private:
     size_t row_size;
     size_t col_size;
