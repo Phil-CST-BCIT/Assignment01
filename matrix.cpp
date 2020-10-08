@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include <cmath>
 #include <limits>
+#include <utility>
+#include <algorithm>
 #include "matrix.hpp"
 
 using namespace std;
@@ -24,6 +26,13 @@ ostream& operator<<(ostream& out, const Matrix& rhs){
     return out;
 }
 
+void mtx_swap(Matrix& lhs, Matrix &rhs){
+    swap(lhs.row_size, rhs.row_size);
+    swap(lhs.col_size, rhs.col_size);
+    lhs.mtx->swap(*rhs.mtx);
+}
+
+//helper non-member function
 void assign_to_zero(Matrix* mtx) {
     for(size_t i = 0; i < mtx->get_r(); ++i) {
         mtx->get_mtx()->push_back(vector<double>());
@@ -33,6 +42,7 @@ void assign_to_zero(Matrix* mtx) {
     }
 }
 
+//constructors
 Matrix::Matrix() :Matrix(1) {}
 
 Matrix::Matrix(size_t n) :row_size{n}, col_size{n}, mtx(new vector<vector<double>>){
@@ -80,6 +90,7 @@ Matrix::Matrix(size_t n, vector<double> & source) :Matrix(n) {
 }
 
 
+//copy constructor
 Matrix::Matrix(const Matrix &source)
     :row_size{source.row_size}, col_size{source.col_size}, mtx(new vector<vector<double>>){
     for(size_t i = 0; i < source.row_size; ++i) {
@@ -89,6 +100,17 @@ Matrix::Matrix(const Matrix &source)
     }
 }
 
+//assignment operator
+Matrix& Matrix::operator=(Matrix rhs) {
+    if(*this == rhs)
+        return *this;
+
+    mtx_swap(*this, rhs);
+
+    return *this;
+}
+
+//getters
 double Matrix::get_value(size_t row, size_t col) const {
 
     if(row > this->get_r() || col > this->get_c())

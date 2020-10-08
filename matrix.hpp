@@ -11,6 +11,8 @@ class Matrix{
 
     friend ostream& operator<<(ostream& out, const Matrix&);
 
+    friend void mtx_swap(Matrix&, Matrix&);
+
 private:
     size_t row_size;
     size_t col_size;
@@ -26,6 +28,9 @@ public:
     //copy constructor
     Matrix(const Matrix& source);
 
+    //assignment operator
+    Matrix& operator=(Matrix rhs);
+
     //getters
     size_t get_r() const {return row_size;}
     size_t get_c() const {return col_size;}
@@ -40,6 +45,12 @@ public:
     //operator overloading as member methods
     bool operator==(const Matrix& rhs) const;
     bool operator!=(const Matrix& rhs) const;
+
+    Matrix& operator++(); //prefix
+    Matrix operator++(int); //postfix
+
+    Matrix& operator--();
+    Matrix operator--(int);
 
     //Other functionalities
     bool clear();
