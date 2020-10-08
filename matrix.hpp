@@ -17,20 +17,31 @@ private:
     vector<vector<double>> *mtx;
 
 public:
+    //constructors
     Matrix();
     explicit Matrix(size_t);
     Matrix(size_t, size_t);
     Matrix(size_t n, vector<double>&);
 
+    //copy constructor
+    Matrix(const Matrix& source);
+
+    //getters
     size_t get_r() const {return row_size;}
     size_t get_c() const {return col_size;}
     double get_value(size_t, size_t)const;
     vector<vector<double>>* get_mtx() {return mtx;}
 
+    //setters
     void set_value(size_t, size_t, double);
     void set_r(size_t r){this->row_size = r;}
     void set_c(size_t c){this->col_size = c;}
 
+    //operator overloading as member methods
+    bool operator==(const Matrix& rhs) const;
+    bool operator!=(const Matrix& rhs) const;
+
+    //Other functionalities
     bool clear();
 
 

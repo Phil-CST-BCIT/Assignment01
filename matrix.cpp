@@ -4,12 +4,23 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <cmath>
+#include <limits>
 #include "matrix.hpp"
 
 using namespace std;
 
 ostream& operator<<(ostream& out, const Matrix& rhs){
     out << "Size of the Matrix: " << rhs.get_r() << " * " << rhs.get_c() << endl;
+
+    for(const vector<double>& vec : *(rhs.mtx)) {
+        out << "| ";
+        for(double d: vec) {
+            out << d << " ";
+        }
+        out << "|\n";
+    }
+
     return out;
 }
 
@@ -68,6 +79,16 @@ Matrix::Matrix(size_t n, vector<double> & source) :Matrix(n) {
     }
 }
 
+
+Matrix::Matrix(const Matrix &source)
+    :row_size{source.row_size}, col_size{source.col_size}, mtx(new vector<vector<double>>){
+    for(size_t i = 0; i < source.row_size; ++i) {
+        this->mtx->push_back(vector<double>());
+        for(size_t j = 0; j < source.row_size; ++j)
+            mtx->at(i).push_back(source.mtx->at(i).at(j));
+    }
+}
+
 double Matrix::get_value(size_t row, size_t col) const {
 
     if(row > this->get_r() || col > this->get_c())
@@ -83,6 +104,28 @@ void Matrix::set_value(size_t row, size_t col, double value) {
 
 
     (this->get_mtx())->at(row).at(col) = value;
+}
+
+//helper non-member function: returns true if the difference of two doubles less than epsilon.
+bool is_equal(double a, double b) {
+    return fabs(a - b) < numeric_limits<double>::epsilon();
+}
+
+bool Matrix::operator==(const Matrix &rhs) const {
+    if(this->get_r() != rhs.get_r() && this->get_c() != rhs.get_c())
+        return false;
+
+    for(size_t i = 0; i < this->get_r(); ++i) {
+        for(size_t j = 0; j < this->get_c(); ++j) {
+            if(!is_equal(this->mtx->at(i).at(j), rhs.mtx->at(i).at(j)))
+                return false;
+        }
+    }
+    return true;
+}
+
+bool Matrix::operator!=(const Matrix &rhs) const {
+    return ! (*this == rhs);
 }
 
 bool Matrix::clear() {
