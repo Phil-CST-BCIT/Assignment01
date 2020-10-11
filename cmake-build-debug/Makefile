@@ -143,6 +143,33 @@ Assignment01/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/build
 .PHONY : Assignment01/fast
 
+helper.o: helper.cpp.o
+
+.PHONY : helper.o
+
+# target to build an object file
+helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/helper.cpp.o
+.PHONY : helper.cpp.o
+
+helper.i: helper.cpp.i
+
+.PHONY : helper.i
+
+# target to preprocess a source file
+helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/helper.cpp.i
+.PHONY : helper.cpp.i
+
+helper.s: helper.cpp.s
+
+.PHONY : helper.s
+
+# target to generate assembly for a file
+helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/helper.cpp.s
+.PHONY : helper.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -197,6 +224,33 @@ matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/matrix.cpp.s
 .PHONY : matrix.cpp.s
 
+unit_test.o: unit_test.cpp.o
+
+.PHONY : unit_test.o
+
+# target to build an object file
+unit_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/unit_test.cpp.o
+.PHONY : unit_test.cpp.o
+
+unit_test.i: unit_test.cpp.i
+
+.PHONY : unit_test.i
+
+# target to preprocess a source file
+unit_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/unit_test.cpp.i
+.PHONY : unit_test.cpp.i
+
+unit_test.s: unit_test.cpp.s
+
+.PHONY : unit_test.s
+
+# target to generate assembly for a file
+unit_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/unit_test.cpp.s
+.PHONY : unit_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,12 +260,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Assignment01"
+	@echo "... helper.o"
+	@echo "... helper.i"
+	@echo "... helper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... matrix.o"
 	@echo "... matrix.i"
 	@echo "... matrix.s"
+	@echo "... unit_test.o"
+	@echo "... unit_test.i"
+	@echo "... unit_test.s"
 .PHONY : help
 
 

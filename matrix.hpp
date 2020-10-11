@@ -10,8 +10,13 @@ using namespace std;
 class Matrix{
 
     friend ostream& operator<<(ostream& out, const Matrix&);
-
+    friend bool operator==(const Matrix& lhs, const Matrix& rhs);
+    friend bool operator!=(const Matrix& lhs ,const Matrix& rhs);
+    friend void assign_to_zero(Matrix*);
+    friend Matrix operator+(Matrix lhs, const Matrix& rhs);
     friend void mtx_swap(Matrix&, Matrix&);
+    friend Matrix operator-(Matrix lhs, const Matrix& rhs);
+    friend Matrix operator*(Matrix lhs, const Matrix& rhs);
 
 private:
     size_t row_size;
@@ -42,15 +47,15 @@ public:
     void set_r(size_t r){this->row_size = r;}
     void set_c(size_t c){this->col_size = c;}
 
-    //operator overloading as member methods
-    bool operator==(const Matrix& rhs) const;
-    bool operator!=(const Matrix& rhs) const;
-
-    Matrix& operator++(); //prefix
+    Matrix& operator++(); //prefix return by ref
     Matrix operator++(int); //postfix
 
     Matrix& operator--();
     Matrix operator--(int);
+
+    Matrix& operator+=(const Matrix& rhs);//addition assignment
+    Matrix& operator-=(const Matrix& rhs);//subtraction assignment
+    Matrix& operator*=(const Matrix& rhs);
 
     //Other functionalities
     bool clear();

@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/helper.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/helper.hpp">
+			<Option target="Assignment01"/>
+		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/main.cpp">
 			<Option target="Assignment01"/>
 		</Unit>
@@ -87,6 +93,9 @@
 			<Option target="Assignment01"/>
 		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/matrix.hpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/unit_test.cpp">
 			<Option target="Assignment01"/>
 		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/CMakeLists.txt">
