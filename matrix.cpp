@@ -13,10 +13,10 @@ using namespace std;
 ostream& operator<<(ostream& out, const Matrix& rhs){
     out << "Size of the Matrix: " << rhs.get_r() << " * " << rhs.get_c() << endl;
 
-    for(const vector<double>& vec : *(rhs.mtx)) {
+    for(size_t i = 0; i < rhs.get_r(); ++i) {
         out << "| ";
-        for(double d: vec) {
-            out << d << " ";
+        for(size_t j = 0; j < rhs.get_c(); ++j) {
+            out << rhs.mtx->at(i).at(j) << " ";
         }
         out << "|\n";
     }

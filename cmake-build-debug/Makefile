@@ -143,6 +143,60 @@ Assignment01/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/build
 .PHONY : Assignment01/fast
 
+connectivity_matrix.o: connectivity_matrix.cpp.o
+
+.PHONY : connectivity_matrix.o
+
+# target to build an object file
+connectivity_matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/connectivity_matrix.cpp.o
+.PHONY : connectivity_matrix.cpp.o
+
+connectivity_matrix.i: connectivity_matrix.cpp.i
+
+.PHONY : connectivity_matrix.i
+
+# target to preprocess a source file
+connectivity_matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/connectivity_matrix.cpp.i
+.PHONY : connectivity_matrix.cpp.i
+
+connectivity_matrix.s: connectivity_matrix.cpp.s
+
+.PHONY : connectivity_matrix.s
+
+# target to generate assembly for a file
+connectivity_matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/connectivity_matrix.cpp.s
+.PHONY : connectivity_matrix.cpp.s
+
+connectivity_uniti_test.o: connectivity_uniti_test.cpp.o
+
+.PHONY : connectivity_uniti_test.o
+
+# target to build an object file
+connectivity_uniti_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/connectivity_uniti_test.cpp.o
+.PHONY : connectivity_uniti_test.cpp.o
+
+connectivity_uniti_test.i: connectivity_uniti_test.cpp.i
+
+.PHONY : connectivity_uniti_test.i
+
+# target to preprocess a source file
+connectivity_uniti_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/connectivity_uniti_test.cpp.i
+.PHONY : connectivity_uniti_test.cpp.i
+
+connectivity_uniti_test.s: connectivity_uniti_test.cpp.s
+
+.PHONY : connectivity_uniti_test.s
+
+# target to generate assembly for a file
+connectivity_uniti_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/connectivity_uniti_test.cpp.s
+.PHONY : connectivity_uniti_test.cpp.s
+
 helper.o: helper.cpp.o
 
 .PHONY : helper.o
@@ -169,6 +223,33 @@ helper.s: helper.cpp.s
 helper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/helper.cpp.s
 .PHONY : helper.cpp.s
+
+importance_matrix.o: importance_matrix.cpp.o
+
+.PHONY : importance_matrix.o
+
+# target to build an object file
+importance_matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/importance_matrix.cpp.o
+.PHONY : importance_matrix.cpp.o
+
+importance_matrix.i: importance_matrix.cpp.i
+
+.PHONY : importance_matrix.i
+
+# target to preprocess a source file
+importance_matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/importance_matrix.cpp.i
+.PHONY : importance_matrix.cpp.i
+
+importance_matrix.s: importance_matrix.cpp.s
+
+.PHONY : importance_matrix.s
+
+# target to generate assembly for a file
+importance_matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/importance_matrix.cpp.s
+.PHONY : importance_matrix.cpp.s
 
 main.o: main.cpp.o
 
@@ -260,9 +341,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Assignment01"
+	@echo "... connectivity_matrix.o"
+	@echo "... connectivity_matrix.i"
+	@echo "... connectivity_matrix.s"
+	@echo "... connectivity_uniti_test.o"
+	@echo "... connectivity_uniti_test.i"
+	@echo "... connectivity_uniti_test.s"
 	@echo "... helper.o"
 	@echo "... helper.i"
 	@echo "... helper.s"
+	@echo "... importance_matrix.o"
+	@echo "... importance_matrix.i"
+	@echo "... importance_matrix.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -80,10 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/connectivity_matrix.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/connectivity_matrix.hpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/connectivity_uniti_test.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/helper.cpp">
 			<Option target="Assignment01"/>
 		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/helper.hpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/importance_matrix.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/importance_matrix.hpp">
 			<Option target="Assignment01"/>
 		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/main.cpp">
