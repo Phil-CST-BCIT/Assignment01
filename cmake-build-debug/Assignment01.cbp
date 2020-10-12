@@ -101,6 +101,9 @@
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/importance_matrix.hpp">
 			<Option target="Assignment01"/>
 		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/impt_unit_test.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/main.cpp">
 			<Option target="Assignment01"/>
 		</Unit>

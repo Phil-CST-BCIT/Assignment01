@@ -7,6 +7,7 @@
 
 using namespace std;
 
+
 //constructor: instantiate a n by n connectivity matrix with entries from source
 ConnectivityMatrix::ConnectivityMatrix(size_t n, vector<double> source)
                 :Matrix(n, source){

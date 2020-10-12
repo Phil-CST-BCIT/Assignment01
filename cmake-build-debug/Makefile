@@ -251,6 +251,33 @@ importance_matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/importance_matrix.cpp.s
 .PHONY : importance_matrix.cpp.s
 
+impt_unit_test.o: impt_unit_test.cpp.o
+
+.PHONY : impt_unit_test.o
+
+# target to build an object file
+impt_unit_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/impt_unit_test.cpp.o
+.PHONY : impt_unit_test.cpp.o
+
+impt_unit_test.i: impt_unit_test.cpp.i
+
+.PHONY : impt_unit_test.i
+
+# target to preprocess a source file
+impt_unit_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/impt_unit_test.cpp.i
+.PHONY : impt_unit_test.cpp.i
+
+impt_unit_test.s: impt_unit_test.cpp.s
+
+.PHONY : impt_unit_test.s
+
+# target to generate assembly for a file
+impt_unit_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/impt_unit_test.cpp.s
+.PHONY : impt_unit_test.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -353,6 +380,9 @@ help:
 	@echo "... importance_matrix.o"
 	@echo "... importance_matrix.i"
 	@echo "... importance_matrix.s"
+	@echo "... impt_unit_test.o"
+	@echo "... impt_unit_test.i"
+	@echo "... impt_unit_test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

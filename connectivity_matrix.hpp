@@ -8,8 +8,6 @@
 #include "matrix.hpp"
 
 class ConnectivityMatrix :public Matrix{
-private:
-    string filename {};
 
 public:
 
