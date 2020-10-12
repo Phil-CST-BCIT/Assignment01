@@ -16,8 +16,6 @@ public:
 
     void random_walk();
 
-
-
 };
 
 #endif //ASSIGNMENT01_STOCHATIC_MATRIX_HPP

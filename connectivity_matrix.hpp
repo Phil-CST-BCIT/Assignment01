@@ -15,8 +15,6 @@ public:
 
     vector<double> calc_impt();
 
-
-    ~ConnectivityMatrix(){};
 };
 
 

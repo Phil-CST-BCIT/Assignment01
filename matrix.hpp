@@ -42,10 +42,8 @@ public:
     double get_value(size_t, size_t)const;
     vector<vector<double>>* get_mtx() {return mtx;}
 
-    //setters
+    //setter
     void set_value(size_t, size_t, double);
-    void set_r(size_t r){this->row_size = r;}
-    void set_c(size_t c){this->col_size = c;}
 
     Matrix& operator++(); //prefix return by ref
     Matrix operator++(int); //postfix

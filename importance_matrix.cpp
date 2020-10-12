@@ -1,9 +1,9 @@
 //
 // Created by Phil Teng on 2020-10-11.
 //
-#include <iostream>
 #include "importance_matrix.hpp"
 using namespace std;
+
 //constructor: instantiates ImportanceMatrix for entries non-zero
 ImportanceMatrix::ImportanceMatrix(size_t n,vector<double>& source ,vector<double>& impt)
                 :Matrix(n, source) {
