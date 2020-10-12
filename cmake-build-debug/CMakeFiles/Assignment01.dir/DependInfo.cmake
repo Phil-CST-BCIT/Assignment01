@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/philteng/CLionProjects/Assignment01/impt_unit_test.cpp" "/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles/Assignment01.dir/impt_unit_test.cpp.o"
   "/Users/philteng/CLionProjects/Assignment01/main.cpp" "/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles/Assignment01.dir/main.cpp.o"
   "/Users/philteng/CLionProjects/Assignment01/matrix.cpp" "/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles/Assignment01.dir/matrix.cpp.o"
+  "/Users/philteng/CLionProjects/Assignment01/sto_unit_tests.cpp" "/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o"
+  "/Users/philteng/CLionProjects/Assignment01/stochatic_matrix.cpp" "/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o"
   "/Users/philteng/CLionProjects/Assignment01/unit_test.cpp" "/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles/Assignment01.dir/unit_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

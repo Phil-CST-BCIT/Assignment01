@@ -181,6 +181,32 @@ CMakeFiles/Assignment01.dir/impt_unit_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment01.dir/impt_unit_test.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/philteng/CLionProjects/Assignment01/impt_unit_test.cpp -o CMakeFiles/Assignment01.dir/impt_unit_test.cpp.s
 
+CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o: CMakeFiles/Assignment01.dir/flags.make
+CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o: ../stochatic_matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o -c /Users/philteng/CLionProjects/Assignment01/stochatic_matrix.cpp
+
+CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/philteng/CLionProjects/Assignment01/stochatic_matrix.cpp > CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.i
+
+CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/philteng/CLionProjects/Assignment01/stochatic_matrix.cpp -o CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.s
+
+CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o: CMakeFiles/Assignment01.dir/flags.make
+CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o: ../sto_unit_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o -c /Users/philteng/CLionProjects/Assignment01/sto_unit_tests.cpp
+
+CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/philteng/CLionProjects/Assignment01/sto_unit_tests.cpp > CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.i
+
+CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/philteng/CLionProjects/Assignment01/sto_unit_tests.cpp -o CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.s
+
 # Object files for target Assignment01
 Assignment01_OBJECTS = \
 "CMakeFiles/Assignment01.dir/main.cpp.o" \
@@ -190,7 +216,9 @@ Assignment01_OBJECTS = \
 "CMakeFiles/Assignment01.dir/connectivity_matrix.cpp.o" \
 "CMakeFiles/Assignment01.dir/connectivity_uniti_test.cpp.o" \
 "CMakeFiles/Assignment01.dir/importance_matrix.cpp.o" \
-"CMakeFiles/Assignment01.dir/impt_unit_test.cpp.o"
+"CMakeFiles/Assignment01.dir/impt_unit_test.cpp.o" \
+"CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o" \
+"CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o"
 
 # External object files for target Assignment01
 Assignment01_EXTERNAL_OBJECTS =
@@ -203,9 +231,11 @@ Assignment01: CMakeFiles/Assignment01.dir/connectivity_matrix.cpp.o
 Assignment01: CMakeFiles/Assignment01.dir/connectivity_uniti_test.cpp.o
 Assignment01: CMakeFiles/Assignment01.dir/importance_matrix.cpp.o
 Assignment01: CMakeFiles/Assignment01.dir/impt_unit_test.cpp.o
+Assignment01: CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o
+Assignment01: CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o
 Assignment01: CMakeFiles/Assignment01.dir/build.make
 Assignment01: CMakeFiles/Assignment01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Assignment01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/philteng/CLionProjects/Assignment01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Assignment01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment01.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

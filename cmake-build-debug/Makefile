@@ -332,6 +332,60 @@ matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/matrix.cpp.s
 .PHONY : matrix.cpp.s
 
+sto_unit_tests.o: sto_unit_tests.cpp.o
+
+.PHONY : sto_unit_tests.o
+
+# target to build an object file
+sto_unit_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.o
+.PHONY : sto_unit_tests.cpp.o
+
+sto_unit_tests.i: sto_unit_tests.cpp.i
+
+.PHONY : sto_unit_tests.i
+
+# target to preprocess a source file
+sto_unit_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.i
+.PHONY : sto_unit_tests.cpp.i
+
+sto_unit_tests.s: sto_unit_tests.cpp.s
+
+.PHONY : sto_unit_tests.s
+
+# target to generate assembly for a file
+sto_unit_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/sto_unit_tests.cpp.s
+.PHONY : sto_unit_tests.cpp.s
+
+stochatic_matrix.o: stochatic_matrix.cpp.o
+
+.PHONY : stochatic_matrix.o
+
+# target to build an object file
+stochatic_matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.o
+.PHONY : stochatic_matrix.cpp.o
+
+stochatic_matrix.i: stochatic_matrix.cpp.i
+
+.PHONY : stochatic_matrix.i
+
+# target to preprocess a source file
+stochatic_matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.i
+.PHONY : stochatic_matrix.cpp.i
+
+stochatic_matrix.s: stochatic_matrix.cpp.s
+
+.PHONY : stochatic_matrix.s
+
+# target to generate assembly for a file
+stochatic_matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/stochatic_matrix.cpp.s
+.PHONY : stochatic_matrix.cpp.s
+
 unit_test.o: unit_test.cpp.o
 
 .PHONY : unit_test.o
@@ -389,6 +443,12 @@ help:
 	@echo "... matrix.o"
 	@echo "... matrix.i"
 	@echo "... matrix.s"
+	@echo "... sto_unit_tests.o"
+	@echo "... sto_unit_tests.i"
+	@echo "... sto_unit_tests.s"
+	@echo "... stochatic_matrix.o"
+	@echo "... stochatic_matrix.i"
+	@echo "... stochatic_matrix.s"
 	@echo "... unit_test.o"
 	@echo "... unit_test.i"
 	@echo "... unit_test.s"

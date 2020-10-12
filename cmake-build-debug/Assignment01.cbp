@@ -113,6 +113,15 @@
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/matrix.hpp">
 			<Option target="Assignment01"/>
 		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/sto_unit_tests.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/stochatic_matrix.cpp">
+			<Option target="Assignment01"/>
+		</Unit>
+		<Unit filename="/Users/philteng/CLionProjects/Assignment01/stochatic_matrix.hpp">
+			<Option target="Assignment01"/>
+		</Unit>
 		<Unit filename="/Users/philteng/CLionProjects/Assignment01/unit_test.cpp">
 			<Option target="Assignment01"/>
 		</Unit>

@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <cmath>
 #include "matrix.hpp"
 #include "helper.hpp"
 
@@ -239,7 +240,7 @@ Matrix& Matrix::operator*=(const Matrix &rhs) {
 
     int counter {0};
     for(int i = 0; i < this->get_r(); ++i) {
-        for(int k = 0; k < this->get_r(); ++k) {
+        for(int k = 0; k < rhs.get_c(); ++k) {
             double entry {0.0};
             for(int j = 0; j < rhs.get_r(); ++j) {
                 entry = entry + this->mtx->at(i).at(j) * rhs.mtx->at(j).at(k);
@@ -249,10 +250,26 @@ Matrix& Matrix::operator*=(const Matrix &rhs) {
         }
     }
 
-    Matrix temp {this->get_r(), source};
+    Matrix temp {this->get_r(), rhs.get_c()};
+
+    for(int i {0}; i < temp.get_r(); ++i) {
+        for(int j {0}; j < temp.get_c(); ++j) {
+            temp.get_mtx()->at(i).at(j) = source.at(i);
+        }
+    }
 
     *this = temp;
     return *this;
+}
+
+//member method: multiply a factor to the calling matrix
+void Matrix::multiply(const double factor) {
+    for(int i {0}; i < this->get_r(); ++i) {
+        for(int j {0}; j < this->get_c(); ++j) {
+            double entry {this->get_value(i, j) * factor};
+            this->set_value(i, j, entry);
+        }
+    }
 }
 
 //member method: set all entries to zero.

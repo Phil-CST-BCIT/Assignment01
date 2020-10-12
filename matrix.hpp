@@ -58,6 +58,7 @@ public:
     Matrix& operator*=(const Matrix& rhs);
 
     //Other functionalities
+    void multiply(double);
     bool clear();
 
 

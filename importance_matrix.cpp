@@ -41,6 +41,6 @@ void ImportanceMatrix::normalize(int index) {
     const double randomness = 1.0/r;
 
     for(int i {0}; i < this->get_r(); ++i) {
-        this->get_mtx()->at(index).at(i) = randomness;
+        this->get_mtx()->at(i).at(index) = randomness;
     }
 }
