@@ -1,4 +1,1 @@
-Name: Fei(Phil) Teng
-Student Number: A00994496
-
-Progress: 100%
+# Webpage ranking algorithm for educational purpose
