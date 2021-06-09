@@ -1,1 +1,1 @@
-# Webpage ranking algorithm for educational purpose
+Webpage ranking algorithm for educational purpose
